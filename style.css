@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f8f8f8;
+  font-family: "Open Sans", sans-serif;
+}
+:root{
+    --web-padding: 0px 150px 0px 150px;
+}
+h1,h2,h3{
+    font-family: "Poppins", sans-serif;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+}
+header{
+    background-color: #0779e4;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--web-padding);
+    align-items: center;
+    color: white;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+header h1{
+    font-weight: 700;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    gap: 50px;
+    margin-right: 260px;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.hero-section{
+    background-image: url(Components/Background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 100px 150px 0px 150px;
+    align-items: center;
+    color: white;
+}
+.hero-text h3{
+    background-color: white;
+    color: #0779e4;
+    padding: 10px;
+    width: fit-content;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.hero-text h1{
+    font-weight: 500;
+    font-size: 70px;
+}
+.hero-text p{
+    color: rgba(255, 255, 255, 0.567);
+}
+.hero-text button{
+    margin-top: 40px;
+    width: 230px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0779e4;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+}
+.hero-text a{
+    text-decoration: none;
+}
+.hero-text button img{
+    width: 20px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--web-padding);
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.skills h3{
+    font-weight: 500;
+    font-size: 20px;
+    color: #0779e4;
+    text-transform: uppercase;
+}
+.skills h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 80px;
+}
+.card a img{
+    width: 30px;
+}
+.card{
+    width: fit-content;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 60px 30px 60px 30px;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.card img{
+    width: 75px;
+}
+.card p{
+    word-spacing: 3px;
+    line-height: 2;
+}
+.card a{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #0779e4;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--web-padding);
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.portfolio h3{
+    font-weight: 500;
+    font-size: 20px;
+    color: #0779e4;
+    text-transform: uppercase;
+}
+.portfolio h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(3,450px);    
+    grid-template-rows: repeat(1,400px);
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+    
+}
+.text{
+    display: none;
+}
+.project1{
+    width: 450px;
+    height: 400px;
+    background-image: url(Components/iOS\ Presentation.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project2{
+    width: 450px;
+    height: 400px;
+    background-image: url(Components/Website\ presentation.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project3{
+    width: 450px;
+    height: 400px;
+    background-color: white;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project h2{
+    display: none;
+}
+.project p{
+    display: none;
+}
+.project1:hover{
+    background-image: linear-gradient(#0779e4cb), url(Components/iOS\ Presentation.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project2:hover{
+    background-image: linear-gradient(#0779e4cb), url(Components/Website\ presentation.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project3:hover{
+    background-image: linear-gradient(#0779e4cb);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project:hover h2{
+    display: flex;
+    color: white;
+}
+.project:hover p{
+    display: flex;
+    color: white;
+}
+.contact{
+    display: flex;
+    padding: var(--web-padding);
+    background-color: white;
+    margin-top: 200px;
+}
+.form-img img{
+    width: 600px;
+}
+.form h2{
+    font-weight: 500;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 50px;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+.form input{
+    height: 50px;
+    border: solid 1px rgba(0, 0, 0, 0.099);
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.name{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.name input{
+    width: 100%;
+}
+.form textarea{
+    height: 125px;
+    padding: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.099);
+    border-radius: 3px;
+}
+.form button{
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #0779e4;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.social{
+    display: flex;
+    gap: 15px;
+    text-transform: uppercase;
+}
+.social a{
+    text-decoration: none;
+    font-weight: 600;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: rgba(0, 0, 0, 0.381);
+}
+@media (max-width:768px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    header h1{
+        margin-left: 30px;
+    }
+    nav{
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        margin-right: 30px;
+    }
+    nav a{
+        font-size: 14px;
+    }
+        
+    main{
+        width: 100%;
+    }
+    .hero-section{
+        padding:100px 0px 0px 15px;
+        width: 100%;
+        height: auto;
+    }
+    .hero-section h1{
+        font-size: 35px;
+    }
+    .hero-section p{
+        font-size: 13px;
+    }
+    .hero-section img{
+        width: 100%;
+    }
+    .hero-img{
+        margin-right: 15px;
+    }
+    .hero-section button{
+        width: 150px;
+        height: 40px;
+        font-size: 10px;
+    }
+    .skills{
+        padding: 0;
+        width: 100%;
+        /* margin: 0px 20px 0px 20px; */
+    }
+    .skills h3{
+        margin-top: 80px;
+    }
+    .skills h1{
+        font-size: 30px;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .card{
+        width: 250px;
+        height: 300px;
+    }
+    .portfolio{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* margin: 0px 20px 0px 20px; */
+    }
+    .project{
+        width: 300px;
+        height: 300px;
+    }
+    .portfolio h3{
+        margin-top: 80px;
+    }
+    .portfolio h1{
+        font-size: 30px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .form-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .form-img img{
+        width: 500;
+    }
+    .form{
+        padding: 0;
+        margin: 0px 15px 0px 15px;
+        width: 700px;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+
+    }
+    .form textarea{
+        width: 100%;
+        padding: 0;
+    }
+    .form input{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media (max-width:486px){
+    body{
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        padding: 0;
+        width: 375px; 
+    }
+    header h1{
+        width: 100%;
+        margin-left: 40px;
+    }
+    nav{
+        display: none;
+        width: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+        padding-top: 130px;
+    }
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-text a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-text button{
+        width: 300px;
+    }
+    .hero-img{
+        margin-top: 20px;
+        margin: 20px 10px 0px 10px;
+        width: 100%;
+    }
+    .hero-img img{
+        width: 100%;
+    }
+    .hero-text h1{
+        font-size: 25px;
+        width: 100%;
+    }
+    .hero-text p{
+        font-size: 12px;
+        width: 300px;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        text-align: center;
+        padding: 0px;
+    }
+    .skills h1{
+        font-size: 25px;
+        width: 300px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        width: 100%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        height: auto;
+        padding: 20px;
+        margin: 20px;
+    }
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .portfolio h1{
+        font-size: 30px;
+    }
+    .project-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .project{
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        padding: 0px;
+    }
+    .form{
+        width: 300px;
+        padding: 0px;
+    }
+    .form-img img{
+        width: 100%;
+    }
+    .form-img{
+        width: 100%;
+    }
+    .form input{
+        width: 100%;
+        padding: 10px 15px 10px 15px;
+    }
+    .form textarea{
+        width: 100%;
+        padding: 10px 15px 10px 15px;
+    }
+    .name {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form button{
+        width: 100%;
+        font-size: 15px;
+    }
+    .form h2{
+        font-size: 20px;
+    }
+    .social{
+        width: 100%;
+    }
+    .social a{
+        font-size: 12px;
+    }
+    .form p{
+        width: 100%;
+    }
+    footer{
+        width: 300px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+}
