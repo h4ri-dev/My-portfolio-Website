@@ -434,6 +434,7 @@ footer{
 }
 @media (max-width:486px){
     body{
+        width: 100%;
         overflow-x: hidden;
         display: flex;
         flex-direction: column;
@@ -442,7 +443,7 @@ footer{
     header{
         display: flex;
         padding: 0;
-        width: 375px; 
+        width: 100%; 
     }
     header h1{
         width: 100%;
@@ -456,12 +457,12 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 375px;
+        width: 100%;
     }
     .hero-section{
         display: flex;
         flex-direction: column;
-        width: 375px;
+        width: 100%;
         align-items: center;
         text-align: center;
         padding: 0px;
@@ -497,6 +498,7 @@ footer{
         width: 300px;
     }
     .skills{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -522,8 +524,17 @@ footer{
         text-align: center;
         width: 300px;
         height: auto;
-        padding: 20px;
-        margin: 20px;
+        padding: 0;
+    }
+    .img{
+        margin-top: 20px;
+    }
+    .card h2{
+        margin:0px 20px 0px 20px;
+
+    }
+    .card p{
+        margin: 0px 20px 20px 20px;
     }
     .portfolio{
         display: flex;
@@ -531,6 +542,7 @@ footer{
         align-items: center;
         padding: 0px;
     }
+    
     .portfolio h1{
         font-size: 30px;
     }
@@ -549,7 +561,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 375px;
+        width:100%;
         padding: 0px;
     }
     .form{
@@ -564,11 +576,12 @@ footer{
     }
     .form input{
         width: 100%;
-        padding: 10px 15px 10px 15px;
+        padding: 0;
     }
     .form textarea{
         width: 100%;
-        padding: 10px 15px 10px 15px;
+        padding: 0;
+        padding-top: 10px;
     }
     .name {
         width: 100%;
